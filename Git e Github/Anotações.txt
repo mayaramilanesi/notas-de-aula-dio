@@ -1,0 +1,47 @@
+- COMANDOS
+
+	dir - lista todas as pastas do diretório
+	cd / - leva para o diretório C:
+	cd .. - volta um nível da pasta
+	cls - limpa o terminal
+	tecla TAB - autocompleta o nome da pasta
+	mkdir nomedapasta - cria uma pasta no diretório em que vc está localizado
+	echo palavraqualquer - apenas printa a palavra subsequente
+	echo > hello.txt - cria um arquivo no diretório em que você está localizado
+	del nomedapasta - deleta todos os arquivos dentro da pasta
+	tecla arrow para cima - navega entre os comandos que foram executados no terminal
+	rmdir nomedapasta /S /Q - remove o repositório 
+	ls -a - mostra pastas ocultas
+	git init - inicializa o repositório dentro da pasta de trabalho
+	git status - verifica o estado dos arquivos
+	mv nomedoarquivo.txt ./nomedapasta - move o arquivo para dentro da pasta
+	git add - adiciona os arquivos modified para o staged, onde eles se preparam para o commit
+	git commit -m "explicação do commit" - Envia a nova versão do arquivo para o repositório local
+	ctrl + L - limpa o terminal
+	clear - limpa o terminal
+
+
+- GIT POR BAIXO DOS PANOS
+	
+	- SHA: Significa Secure Hash Algorithm (Algoritmo de Hash Seguro), é um conjunto de funções hash criptográficas projetadas
+		pela NSA (Agência de Segurança Nacional dos EUA). A encriptação gera um conjunto de characteres identificador
+		de 40 dígitos. É uma forma curta de representar ou identificar um arquivo.
+	COMANDO PARA GERAR NO GIT BASH:openssl sha1 NOMEDOARQUIVO 
+	
+
+	
+- OBJETOS INTERNOS DO GIT
+	- BLOBS: contém metadados do git e guarda o sha do arquivo
+	- TREES: monta toda a estrutura e guarda o nome dos arquivos
+	- COMMITS: junta tudo, dá sentido ao versionamento. A mensagem que escrevemos vai dizer o pq da nova versão
+
+
+
+
+- GITHUB
+	- Para enviar repositório local para o Github: 
+		- Criar repositório no github
+		- no terminal, usar o comando git remote add origin https://github.com/mayaramilanesi/livro-receitas.git
+		- git remote -v - lista os repositórios remotos
+		- git push origin main - manda o repositório local para o github
+
